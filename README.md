@@ -1,4 +1,4 @@
-# 这里是一些vue的技术点总结
+# 目录
 
 [**Echarts** ](https://github.com/wgjh5/vueSummarize/blob/master/Echarts.md)
 
