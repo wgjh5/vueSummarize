@@ -304,4 +304,8 @@ div {
 
 #### 效果图如下：
 
+<<<<<<< HEAD
 ![1545913923396](https://user-images.githubusercontent.com/43693262/50480530-6108c100-0a17-11e9-8667-8b9812e17770.png)
+=======
+![1545913923396](https://user-images.githubusercontent.com/43693262/50480530-6108c100-0a17-11e9-8667-8b9812e17770.png)
+>>>>>>> d43c518b7dd89e0f2e946764eb5a1e0c105af1fd
