@@ -60,6 +60,29 @@ new Vue({
 })
 ```
 
+#### 4.在组件中的用法
+
+````js
+//跟methods同级 
+sockets: {
+    connect() {
+      this.id = this.$socket.id;
+      // this.$socket.emit("sendMessageToServer", "0025520"); //监听connect事件
+    },
+    servermessage(data) {
+      // 监听message事件，方法是后台定义和提供的
+      console.log(data);
+    }
+  },
+ methods: {
+    // websocket
+    clickButton: function(val) {
+      //添加按钮事件向服务端发送数据
+      this.$socket.emit("sendMessageToServer", val);
+    },
+   }
+````
+
 ## 二、vue md5加密用法
 
 #### 1.先下载md5
