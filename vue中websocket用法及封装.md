@@ -81,3 +81,8 @@ sockets: {
    }
 ```
 
+[参考链接vue](https://blog.csdn.net/qq_34089503/article/details/85037258)
+
+[参考链接ws](https://blog.csdn.net/xxg1209535639/article/details/78863292)
+
+[参考链接NPM](https://www.npmjs.com/package/vue-socket-io)
