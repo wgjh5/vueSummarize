@@ -1,8 +1,8 @@
 ## 一、class的绑定
 
-单个判断推荐[1](#one)，两个条件动态切换推荐[5](#five)，多个推荐[4](#four)
+单个判断推荐[1](#1我们可以传给v-bindclass一个对象以动态地切换-class")，两个条件动态切换推荐[5](#5三元表达式动态切换class推荐)，多个推荐[4](#4数组的方式绑定class)
 
-<h4 id=“one”>1.我们可以传给 `v-bind:class` 一个对象，以动态地切换 class</h4>
+<h4 id=“1我们可以传给v-bindclass一个对象以动态地切换-class”>1.我们可以传给 `v-bind:class` 一个对象，以动态地切换 class</h4>
 
 > 根据`isActive`的true,false变化，动态绑定单个class
 
@@ -64,7 +64,7 @@ computed: {
 }
 ```
 
-<h4 id=“four”>4.数组的方式绑定class</h4>
+<h4 id=“4数组的方式绑定class”>4.数组的方式绑定class</h4>
 
 > 如果你想动态绑定多个class，可以用一个数组
 
@@ -85,7 +85,7 @@ data: {
 </li>
 ````
 
-<h4 id=“five”>5.三元表达式动态切换class(推荐)</h4>
+<h4 id=“5三元表达式动态切换class推荐”>5.三元表达式动态切换class(推荐)</h4>
 
 > `errorClass`条件不满足
 
