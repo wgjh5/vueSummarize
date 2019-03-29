@@ -43,8 +43,6 @@ data: {
 }
 ```
 
-<span id="lee">aaa</span> 
-
 #### 3.计算属性的方式绑定class
 
 > 根据计算属性的判断动态绑定多个class
