@@ -8,4 +8,5 @@
 | [vue中v-touch事件用法](https://github.com/wgjh5/vueSummarize/blob/master/vue%E4%B8%ADv-touch%E4%BA%8B%E4%BB%B6%E7%94%A8%E6%B3%95.md) | [vue中websocket用法及封装](https://github.com/wgjh5/vueSummarize/blob/master/vue%E4%B8%ADwebsocket%E7%94%A8%E6%B3%95%E5%8F%8A%E5%B0%81%E8%A3%85.md) |
 | [ 关于watch和computed的结合监听props](https://github.com/wgjh5/vueSummarize/blob/master/%E5%85%B3%E4%BA%8Ewatch%E5%92%8Ccomputed%E7%9A%84%E7%BB%93%E5%90%88%E7%9B%91%E5%90%ACprops.md) | [运用百度api实现定位城市](https://github.com/wgjh5/vueSummarize/blob/master/%E8%BF%90%E7%94%A8%E7%99%BE%E5%BA%A6api%E5%AE%9E%E7%8E%B0%E5%AE%9A%E4%BD%8D%E5%9F%8E%E5%B8%82.md) |
 | [左滑动删除组件](https://github.com/wgjh5/vueSummarize/blob/master/%E5%B7%A6%E6%BB%91%E5%8A%A8%E5%88%A0%E9%99%A4%E7%BB%84%E4%BB%B6.md) | [图片上传组件upload](https://github.com/wgjh5/vueSummarize/blob/master/vue%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0.md) |
+| [vue动态绑定类名的几种方法](https://github.com/wgjh5/vueSummarize/blob/master/vue动态绑定类名的几种方法.md) |                                                              |
 
