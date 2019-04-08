@@ -25,5 +25,4 @@ npm run test
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[demo](https://wgjh5.github.io/vueSummarize/vuejs%20%E7%A7%BB%E5%8A%A8%E7%AB%AF%20%E5%AE%9E%E7%8E%B0div%E6%8B%96%E6%8B%BD%E7%A7%BB%E5%8A%A8/app/dist/index.html#/app)
