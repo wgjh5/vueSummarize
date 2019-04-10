@@ -6,6 +6,9 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<link rel="icon" href="<%= BASE_URL %>favicon.ico">
 		<meta name="robots" content="index, follow" />
+		 <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+		<link rel="preload" href="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>" as="script">
+		<% } %>
 		<link href="manifest.json" rel="manifest">
 		<title>app</title>
 		<style>
@@ -49,9 +52,9 @@
     </style>
 	</head>
 	<body>
-		<noscript>
+<!-- 		<noscript>
 			<strong>We're sorry but app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-		</noscript>
+		</noscript> -->
 		<div id="app"></div>
 		<div class="content">
         <div class="text">Hello PWA!</div>
@@ -60,11 +63,12 @@
 		<script>
 			'serviceWorker' in navigator && window.addEventListener('load', () => {
 				navigator.serviceWorker.register('service-worker.js').then(a => {
-					console.log('SW registered: ', a)
+					console.log('SW 注册成功: ', a)
 				}).catch(a => {
-					console.log('SW registration failed: ', a)
+					console.log('SW 注册失败: ', a)
 				})
 			});
+			navigator.serviceWorker.getRegistrations().then(function(registrations) { for(let registration of registrations) { registration.unregister() } })
 		</script>
 		 <script>
 				var dfdPrompt = null;

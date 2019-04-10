@@ -1,3 +1,4 @@
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin-loader');
 module.exports = {
   // 基本路径
   baseUrl: process.env.NODE_ENV === 'production'
@@ -28,6 +29,11 @@ module.exports = {
       // 为开发环境修改配置...
     }
   },
+
+
+ 
+ 
+
   // 是一个函数，会接收一个基于 webpack-chain 的 ChainableConfig 实例。允许对内部的 webpack 配置进行更细粒度的修改。
   chainWebpack: config => {
     /*config.module
@@ -61,10 +67,22 @@ module.exports = {
     before: app => {},
   },
   // PWA 插件相关配置
-  pwa: {},
+  pwa: {
+// 			  new SWPrecacheWebpackPlugin(
+// 		  {
+// 		    cacheId: 'my-project-name',
+// 		    dontCacheBustUrlsMatching: /\.\w{8}\./,
+// 		    filename: 'service-worker.js',
+// 		    minify: true,
+// 		    navigateFallback: PUBLIC_PATH + 'index.html',
+// 		    staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
+// 		  }
+// 		),
+	},
+	
   // 第三方插件配置
   pluginOptions: {
   // ...
-	
+
   }
 }

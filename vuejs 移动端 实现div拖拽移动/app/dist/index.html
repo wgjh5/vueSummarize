@@ -6,6 +6,8 @@
 		<meta name=viewport content="width=device-width,initial-scale=1">
 		<!--[if IE]><link rel="icon" href="favicon.ico"><![endif]-->
 		<meta name=robots content="index, follow">
+		<link rel=preload href=js/chunk-vendors.6da77210.js as=script>
+		<link rel=preload href=js/app.61f2221f.js as=script>
 		<link href=manifest.json rel=manifest>
 		<title>app</title>
 		<style>body, html {
@@ -46,7 +48,7 @@
             background: #f51210;
         }</style>
 		<link href=css/app.b617d31f.css rel=preload as=style>
-		<link href=js/app.8001bee5.js rel=preload as=script>
+		<link href=js/app.61f2221f.js rel=preload as=script>
 		<link href=js/chunk-vendors.6da77210.js rel=preload as=script>
 		<link href=css/app.b617d31f.css rel=stylesheet>
 		<link rel=icon type=image/png sizes=32x32 href=img/icons/favicon-32x32.png> <link rel=icon type=image/png sizes=16x16
@@ -60,8 +62,7 @@
 		<meta name=msapplication-TileImage content=img/icons/msapplication-icon-144x144.png> <meta name=msapplication-TileColor
 		 content=#000000>
 	</head>
-	<body><noscript><strong>We're sorry but app doesn't work properly without JavaScript enabled. Please enable it to
-				continue.</strong></noscript>
+	<body>
 		<div id=app></div>
 		<div class=content>
 			<div class=text>Hello PWA!</div>
@@ -70,11 +71,16 @@
 		<script>
 			'serviceWorker' in navigator && window.addEventListener('load', () => {
 				navigator.serviceWorker.register('service-worker.js').then(a => {
-					console.log('SW registered: ', a)
+					console.log('SW 注册成功: ', a)
 				}).catch(a => {
-					console.log('SW registration failed: ', a)
+					console.log('SW 注册失败: ', a)
 				})
 			});
+			navigator.serviceWorker.getRegistrations().then(function(registrations) {
+				for (let registration of registrations) {
+					registration.unregister()
+				}
+			})
 		</script>
 		<script>
 			var dfdPrompt = null;
@@ -103,4 +109,4 @@
 				dfdPrompt = null;
 			});
 		</script>
-		<script src=js/chunk-vendors.6da77210.js> </script> <script src=js/app.8001bee5.js> </script> </body> </html>
+		<script src=js/chunk-vendors.6da77210.js> </script> <script src=js/app.61f2221f.js> </script> </body> </html>
