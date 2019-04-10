@@ -65,5 +65,6 @@ module.exports = {
   // 第三方插件配置
   pluginOptions: {
   // ...
+	
   }
 }

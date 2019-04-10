@@ -3,7 +3,8 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 import VueRouter from 'vue-router'
-	Vue.use(VueRouter)
+import './registerServiceWorker'
+Vue.use(VueRouter)
 const routes = [{
 		path: '/App',
 		name: 'app',
@@ -13,8 +14,8 @@ const routes = [{
 		redirect: 'app'
 	} //  碰到#/重定向到#/home
 	]
-	const router = new VueRouter({
-	routes
+const router = new VueRouter({
+routes
 })
 new Vue({
 	router,
