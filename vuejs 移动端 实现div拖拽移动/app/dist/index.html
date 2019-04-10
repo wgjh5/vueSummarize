@@ -1,7 +1,67 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><!--[if IE]><link rel="icon" href="favicon.ico"><![endif]--><meta name=robots content="index, follow"><meta http-equiv=Content-Type content="text/html; charset=UTF-8"><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=7"><link rel=dns-prefetch href=https://res.cloudinary.com/ ><link rel=dns-prefetch href=https://storage.googleapis.com/ ><link rel=dns-prefetch href=https://api.rss2json.com/ ><meta name=language content=en-EN><meta name=author content="Irfan Maulana"><meta name=description content="PWA with Vue + Workbox for WWWID RSS Feed"><meta property=og:title content=Vue-WWWID><meta property=og:description content="PWA with Vue + Workbox for WWWID RSS Feed"><meta name=twitter:card content=summary_large_image><meta name=twitter:creator content=@maz_ipan><meta name=twitter:title content=Vue-WWWID><meta name=twitter:description content="PWA with Vue + Workbox for WWWID RSS Feed"><link href=manifest.json rel=manifest><title>app</title><link href=css/app.b617d31f.css rel=preload as=style><link href=js/app.8001bee5.js rel=preload as=script><link href=js/chunk-vendors.6da77210.js rel=preload as=script><link href=css/app.b617d31f.css rel=stylesheet><link rel=icon type=image/png sizes=32x32 href=img/icons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=img/icons/favicon-16x16.png><link rel=manifest href=manifest.json><meta name=theme-color content=#4DBA87><meta name=apple-mobile-web-app-capable content=no><meta name=apple-mobile-web-app-status-bar-style content=default><meta name=apple-mobile-web-app-title content=app><link rel=apple-touch-icon href=img/icons/apple-touch-icon-152x152.png><link rel=mask-icon href=img/icons/safari-pinned-tab.svg color=#4DBA87><meta name=msapplication-TileImage content=img/icons/msapplication-icon-144x144.png><meta name=msapplication-TileColor content=#000000></head><body><noscript><strong>We're sorry but app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script>'serviceWorker' in navigator && window.addEventListener('load', () => {
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><!--[if IE]><link rel="icon" href="favicon.ico"><![endif]--><meta name=robots content="index, follow"><link href=manifest.json rel=manifest><title>app</title><style>body, html {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background: #2196f3;
+        }
+        .content {
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            color: #fff;
+            text-align: center;
+        }
+        .text {
+            height: 30px;
+            text-align: center;
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .button {
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            margin: 10px auto 0;
+            background: #f44336;
+            border-radius: 8px;
+            cursor: pointer;
+            display: none;
+        }
+        .button:active {
+            background: #f51210;
+        }</style><link href=css/app.b617d31f.css rel=preload as=style><link href=js/app.8001bee5.js rel=preload as=script><link href=js/chunk-vendors.6da77210.js rel=preload as=script><link href=css/app.b617d31f.css rel=stylesheet><link rel=icon type=image/png sizes=32x32 href=img/icons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=img/icons/favicon-16x16.png><link rel=manifest href=manifest.json><meta name=theme-color content=#4DBA87><meta name=apple-mobile-web-app-capable content=no><meta name=apple-mobile-web-app-status-bar-style content=default><meta name=apple-mobile-web-app-title content=app><link rel=apple-touch-icon href=img/icons/apple-touch-icon-152x152.png><link rel=mask-icon href=img/icons/safari-pinned-tab.svg color=#4DBA87><meta name=msapplication-TileImage content=img/icons/msapplication-icon-144x144.png><meta name=msapplication-TileColor content=#000000></head><body><noscript><strong>We're sorry but app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><div class=content><div class=text>Hello PWA!</div><div class=button id=btn>点击显示横幅</div></div><script>'serviceWorker' in navigator && window.addEventListener('load', () => {
 				navigator.serviceWorker.register('service-worker.js').then(a => {
 					console.log('SW registered: ', a)
 				}).catch(a => {
 					console.log('SW registration failed: ', a)
 				})
-			});</script><script src=js/chunk-vendors.6da77210.js></script><script src=js/app.8001bee5.js></script></body></html>
+			});</script><script>var dfdPrompt = null;
+				var button = document.getElementById('btn');
+				window.addEventListener('beforeinstallprompt', function (e) {
+					// 存储事件
+					dfdPrompt = e;
+					// 显示按钮
+					button.style.display = 'block';
+					// 阻止默认事件
+					e.preventDefault();
+					return false;
+				});
+				button.addEventListener('click', function (e) {
+					if (dfdPrompt == null) {
+						return;
+					}
+					// 通过按钮点击事件触发横幅显示
+					dfdPrompt.prompt();
+					// 监控用户的安装行为
+					dfdPrompt.userChoice.then(function (choiceResult) {
+						alert(choiceResult.outcome);
+					});
+					// 隐藏按钮
+					button.style.display = 'none';
+					dfdPrompt = null;
+				});</script><script src=js/chunk-vendors.6da77210.js></script><script src=js/app.8001bee5.js></script></body></html>
