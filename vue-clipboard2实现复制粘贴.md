@@ -23,7 +23,7 @@ Vue.use(VueClipboard)
 <!--v-clipboard:copy="要复制的内容"-->
 <!-- v-clipboard:success="onCopy"，复制成功执行的函数-->
 <!--v-clipboard:error="onError",复制失败执行的函数-->
-<div class="footerButton copyBank" v-clipboard:copy="b.BankNo" v-	clipboard:success="onCopy" v-clipboard:error="onError">
+<div class="footerButton copyBank" v-clipboard:copy="b.BankNo" v-clipboard:success="onCopy" v-clipboard:error="onError">
                 	{{$t("m.recharge.copyBank")}}
 </div>
 
