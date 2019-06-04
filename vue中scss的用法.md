@@ -36,4 +36,4 @@ document.addEventListener("DOMContentLoaded", function() {
 </style>
 ````
 
-[assets源码链接](./asstes/)
+[assets源码链接](./asstes)
