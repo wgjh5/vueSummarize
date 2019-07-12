@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang=en>
-	<head>
-		<meta charset=utf-8>
-		<meta http-equiv=X-UA-Compatible content="IE=edge">
-		<meta name=viewport content="width=device-width,initial-scale=1">
-		<!--[if IE]><link rel="icon" href="favicon.ico"><![endif]-->
-		<meta name=robots content="index, follow">
-		<link rel=preload href=js/chunk-vendors.6da77210.js as=script>
-		<link rel=preload href=js/app.61f2221f.js as=script>
-		<link href=manifest.json rel=manifest>
-		<title>app</title>
-		<style>body, html {
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><!--[if IE]><link rel="icon" href="favicon.ico"><![endif]--><meta name=robots content="index, follow"><link rel=preload href=js/chunk-vendors.6da77210.js as=script><link rel=preload href=js/app.f590f98b.js as=script><link href=manifest.json rel=manifest><script src="https://www.w3cways.com/demo/vconsole/vconsole.min.js?v=2.2.0"></script><title>app</title><style>body, html {
             height: 100%;
             padding: 0;
             margin: 0;
@@ -46,67 +34,35 @@
         }
         .button:active {
             background: #f51210;
-        }</style>
-		<link href=css/app.b617d31f.css rel=preload as=style>
-		<link href=js/app.61f2221f.js rel=preload as=script>
-		<link href=js/chunk-vendors.6da77210.js rel=preload as=script>
-		<link href=css/app.b617d31f.css rel=stylesheet>
-		<link rel=icon type=image/png sizes=32x32 href=img/icons/favicon-32x32.png> <link rel=icon type=image/png sizes=16x16
-		 href=img/icons/favicon-16x16.png> <link rel=manifest href=manifest.json>
-		<meta name=theme-color content=#4DBA87>
-		<meta name=apple-mobile-web-app-capable content=no>
-		<meta name=apple-mobile-web-app-status-bar-style content=default>
-		<meta name=apple-mobile-web-app-title content=app>
-		<link rel=apple-touch-icon href=img/icons/apple-touch-icon-152x152.png> <link rel=mask-icon href=img/icons/safari-pinned-tab.svg
-		 color=#4DBA87>
-		<meta name=msapplication-TileImage content=img/icons/msapplication-icon-144x144.png> <meta name=msapplication-TileColor
-		 content=#000000>
-	</head>
-	<body>
-		<div id=app></div>
-		<div class=content>
-			<div class=text>Hello PWA!</div>
-			<div class=button id=btn>点击显示横幅</div>
-		</div>
-		<script>
-			'serviceWorker' in navigator && window.addEventListener('load', () => {
+        }</style><link href=css/app.e3e6c8db.css rel=preload as=style><link href=js/app.f590f98b.js rel=preload as=script><link href=js/chunk-vendors.6da77210.js rel=preload as=script><link href=css/app.e3e6c8db.css rel=stylesheet><link rel=icon type=image/png sizes=32x32 href=img/icons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=img/icons/favicon-16x16.png><link rel=manifest href=manifest.json><meta name=theme-color content=#4DBA87><meta name=apple-mobile-web-app-capable content=no><meta name=apple-mobile-web-app-status-bar-style content=default><meta name=apple-mobile-web-app-title content=app><link rel=apple-touch-icon href=img/icons/apple-touch-icon-152x152.png><link rel=mask-icon href=img/icons/safari-pinned-tab.svg color=#4DBA87><meta name=msapplication-TileImage content=img/icons/msapplication-icon-144x144.png><meta name=msapplication-TileColor content=#000000></head><body><div id=app></div><div class=content><div class=text>Hello PWA!</div><div class=button id=btn>点击显示横幅</div></div><script>'serviceWorker' in navigator && window.addEventListener('load', () => {
 				navigator.serviceWorker.register('service-worker.js').then(a => {
 					console.log('SW 注册成功: ', a)
 				}).catch(a => {
 					console.log('SW 注册失败: ', a)
 				})
 			});
-			navigator.serviceWorker.getRegistrations().then(function(registrations) {
-				for (let registration of registrations) {
-					registration.unregister()
-				}
-			})
-		</script>
-		<script>
-			var dfdPrompt = null;
-			var button = document.getElementById('btn');
-			window.addEventListener('beforeinstallprompt', function(e) {
-				// 存储事件
-				dfdPrompt = e;
-				// 显示按钮
-				button.style.display = 'block';
-				// 阻止默认事件
-				e.preventDefault();
-				return false;
-			});
-			button.addEventListener('click', function(e) {
-				if (dfdPrompt == null) {
-					return;
-				}
-				// 通过按钮点击事件触发横幅显示
-				dfdPrompt.prompt();
-				// 监控用户的安装行为
-				dfdPrompt.userChoice.then(function(choiceResult) {
-					alert(choiceResult.outcome);
+			navigator.serviceWorker.getRegistrations().then(function(registrations) { for(let registration of registrations) { registration.unregister() } })</script><script>var dfdPrompt = null;
+				var button = document.getElementById('btn');
+				window.addEventListener('beforeinstallprompt', function (e) {
+					// 存储事件
+					dfdPrompt = e;
+					// 显示按钮
+					button.style.display = 'block';
+					// 阻止默认事件
+					e.preventDefault();
+					return false;
 				});
-				// 隐藏按钮
-				button.style.display = 'none';
-				dfdPrompt = null;
-			});
-		</script>
-		<script src=js/chunk-vendors.6da77210.js> </script> <script src=js/app.61f2221f.js> </script> </body> </html>
+				button.addEventListener('click', function (e) {
+					if (dfdPrompt == null) {
+						return;
+					}
+					// 通过按钮点击事件触发横幅显示
+					dfdPrompt.prompt();
+					// 监控用户的安装行为
+					dfdPrompt.userChoice.then(function (choiceResult) {
+						alert(choiceResult.outcome);
+					});
+					// 隐藏按钮
+					button.style.display = 'none';
+					dfdPrompt = null;
+				});</script><script src=js/chunk-vendors.6da77210.js></script><script src=js/app.f590f98b.js></script></body></html>
