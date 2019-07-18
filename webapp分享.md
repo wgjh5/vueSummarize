@@ -413,6 +413,10 @@ data () {
 
 ![vue-native-share](.\img\vue-native-share.png)
 
+## 推荐：
+
+> 相对来说，本人更推荐第一种类型，相对来说兼容性更好(毕竟经过本人的亲自升级啦!)
+
 [参考链接vue-native-share](https://blog.csdn.net/weixin_38787928/article/details/86741227)
 
 [参考链接mshare](https://blog.csdn.net/weixin_38787928/article/details/86741227)
@@ -420,3 +424,5 @@ data () {
 [移动端H5多平台分享实践1](https://www.w3cplus.com/mobile/h5-share.html)
 
 [移动端H5多平台分享实践2](https://juejin.im/post/5a61a8b86fb9a01cba42a742)
+
+#### 原文地址：<https://github.com/wgjh5/webapp-share> 

@@ -16,4 +16,5 @@
 | [vue-clipboard2 实现复制粘贴](https://github.com/wgjh5/vueSummarize/blob/master/vue-clipboard2%E5%AE%9E%E7%8E%B0%E5%A4%8D%E5%88%B6%E7%B2%98%E8%B4%B4.md) | [vue图片上传及压缩组件的封装](https://github.com/wgjh5/vueSummarize/blob/master/vue%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E5%8F%8A%E5%8E%8B%E7%BC%A9%E7%BB%84%E4%BB%B6%E7%9A%84%E5%B0%81%E8%A3%85.md) |
 | [vue中scss的用法](https://github.com/wgjh5/vueSummarize/blob/master/vue%E4%B8%ADscss%E7%9A%84%E7%94%A8%E6%B3%95.md) | [vue判断手机移动端](https://github.com/wgjh5/vueSummarize/blob/master/vue%E5%88%A4%E6%96%AD%E6%89%8B%E6%9C%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF.md) |
 | [vue给js加版本号](https://github.com/wgjh5/vueSummarize/blob/master/vue%E7%BB%99js%E6%B7%BB%E5%8A%A0%E7%89%88%E6%9C%AC%E5%8F%B7.md) | [解决Vuex持久化插件-在F5刷新页面后数据不见的问题](https://github.com/wgjh5/vueSummarize/blob/master/%E8%A7%A3%E5%86%B3vux%E5%88%B7%E6%96%B0%E6%B6%88%E5%A4%B1%E9%97%AE%E9%A2%98.md) |
+| [webapp分享](https://github.com/wgjh5/vueSummarize/blob/master/webapp%E5%88%86%E4%BA%AB.md) |                                                              |
 
