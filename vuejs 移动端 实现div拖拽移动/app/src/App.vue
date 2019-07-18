@@ -6,22 +6,25 @@
 			 @mouseup="end" @touchend="end">
 
 			</div>
-			<div @click="share" class="share">
+			<div @click="shareStatus=!shareStatus" class="share">
 				分享
 			</div>
+			<vue-native-share :shareMenu="shareMenu" :config="config" class="shares" v-if="shareStatus"/>
 		</div>
 	</div>
 </template>
 
 <script>
+	import vueNativeShare from 'vue-native-share'
 	export default {
 		name: 'app',
 		components: {
-
+			vueNativeShare
 		},
 		data() {
 			return {
 				flags: false,
+				shareStatus:false,
 				position: {
 					x: 0,
 					y: 0
@@ -32,6 +35,21 @@
 				dy: '',
 				xPum: '',
 				yPum: '',
+				// ====
+				shareMenu: [0, 1, 2, 3, 4, 5],
+				config: {
+					title: '分享标题',
+					desc: '描述',
+					img: '图片地址',
+					img_title: '图片标题',
+					link: '当前链接',
+					success: () => {
+						console.log('success')
+					}, //成功回调
+					cancel: () => {
+						console.log('cancel')
+					}, //取消回调
+				}
 			}
 		},
 
@@ -101,7 +119,7 @@
 					alert("失败")
 				}
 			},
-				
+
 		},
 	}
 </script>
@@ -161,5 +179,11 @@
 		line-height: 4rem;
 		color: #FFFFFF;
 		background-color: red;
+	}
+	#nativeShare{
+		position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: #fff;
 	}
 </style>

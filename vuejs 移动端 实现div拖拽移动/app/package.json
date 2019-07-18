@@ -11,6 +11,7 @@
     "core-js": "^2.6.5",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.6",
+    "vue-native-share": "^1.0.2",
     "vue-router": "^3.0.3"
   },
   "devDependencies": {
