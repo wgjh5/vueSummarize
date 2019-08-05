@@ -8,7 +8,7 @@
 
 1. 下载[splite3](https://www.sqlite.org/download.html)
 
-![](.\img\splite-exe.png)
+![](.\img\spliteexe.png)
 
 2. 新建一个临时文件夹，使用英文名字，将解压后的sqlite.exe文件复制到这个临时文件夹下
 
