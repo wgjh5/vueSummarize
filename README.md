@@ -17,5 +17,5 @@
 | [vue中scss的用法](https://github.com/wgjh5/vueSummarize/blob/master/vue%E4%B8%ADscss%E7%9A%84%E7%94%A8%E6%B3%95.md) | [vue判断手机移动端](https://github.com/wgjh5/vueSummarize/blob/master/vue%E5%88%A4%E6%96%AD%E6%89%8B%E6%9C%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF.md) |
 | [vue给js加版本号](https://github.com/wgjh5/vueSummarize/blob/master/vue%E7%BB%99js%E6%B7%BB%E5%8A%A0%E7%89%88%E6%9C%AC%E5%8F%B7.md) | [解决Vuex持久化插件-在F5刷新页面后数据不见的问题](https://github.com/wgjh5/vueSummarize/blob/master/%E8%A7%A3%E5%86%B3vux%E5%88%B7%E6%96%B0%E6%B6%88%E5%A4%B1%E9%97%AE%E9%A2%98.md) |
 | [webapp分享](https://github.com/wgjh5/vueSummarize/blob/master/webapp%E5%88%86%E4%BA%AB.md) | [解决keepAlive缓存bug](https://github.com/wgjh5/vueSummarize/blob/master/%E8%A7%A3%E5%86%B3keep-alin%E7%BC%93%E5%AD%98bug.md) |
-| [解决svn清理失败问题](https://github.com/wgjh5/vueSummarize/blob/master/%E8%A7%A3%E5%86%B3SVN%E6%B8%85%E7%90%86%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98.md) |                                                              |
+| [解决svn清理失败问题](https://github.com/wgjh5/vueSummarize/blob/master/%E8%A7%A3%E5%86%B3SVN%E6%B8%85%E7%90%86%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98.md) | [保留两位小数、整数等文本框方法](https://github.com/wgjh5/vueSummarize/blob/master/%E6%96%87%E6%9C%AC%E6%A1%86%E4%BF%9D%E7%95%99%E4%B8%A4%E4%BD%8D%E5%B0%8F%E6%95%B0%E3%80%81%E4%BF%9D%E7%95%99%E6%95%B4%E6%95%B0%E7%9A%84%E6%96%B9%E6%B3%95.md) |
 
