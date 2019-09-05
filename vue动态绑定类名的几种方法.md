@@ -19,8 +19,8 @@
   v-bind:class="{ active: isActive, 'text-danger': hasError }"
 ></div>
 
-//和如下 data：
-//isActive为true时渲染active，hasError为false时class渲染text-danger
+//如下 data：
+//isActive为true时渲染active，hasError为true时class渲染text-danger
 data: {
   isActive: true,
   hasError: false
