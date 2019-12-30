@@ -19,4 +19,7 @@
 | [webapp分享](https://github.com/wgjh5/vueSummarize/blob/master/webapp%E5%88%86%E4%BA%AB.md) | [解决keepAlive缓存bug](https://github.com/wgjh5/vueSummarize/blob/master/%E8%A7%A3%E5%86%B3keep-alin%E7%BC%93%E5%AD%98bug.md) |
 | [解决svn清理失败问题](https://github.com/wgjh5/vueSummarize/blob/master/%E8%A7%A3%E5%86%B3SVN%E6%B8%85%E7%90%86%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98.md) | [保留两位小数、整数等文本框方法](https://github.com/wgjh5/vueSummarize/blob/master/%E6%96%87%E6%9C%AC%E6%A1%86%E4%BF%9D%E7%95%99%E4%B8%A4%E4%BD%8D%E5%B0%8F%E6%95%B0%E3%80%81%E4%BF%9D%E7%95%99%E6%95%B4%E6%95%B0%E7%9A%84%E6%96%B9%E6%B3%95.md) |
 | [解决transformrotate()在ios上不生效的坑](https://github.com/wgjh5/vueSummarize/blob/master/%E8%A7%A3%E5%86%B3transformrotate()%E5%9C%A8ios%E4%B8%8A%E4%B8%8D%E7%94%9F%E6%95%88%E7%9A%84%E5%9D%91.md) | [vue.config.js基本配置](https://github.com/wgjh5/vueSummarize/blob/master/vue.config.js%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE.md) |
+| [vue中qrcode的使用方法](./vue中qrcode的使用方法.md)          | [vue路由钩子函数的实战用法](./vue路由钩子函数的实战用法.md)  |
+| [vue中Promise的实战用法](./vue中Promise的实战用法.md)        | [vue父子组件的传值与方法互调](./vue父子组件的传值与方法互调.md) |
+| [vue中sass报错解决办法](./)                                  |                                                              |
 
