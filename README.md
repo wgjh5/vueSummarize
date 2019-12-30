@@ -21,5 +21,5 @@
 | [解决transformrotate()在ios上不生效的坑](https://github.com/wgjh5/vueSummarize/blob/master/%E8%A7%A3%E5%86%B3transformrotate()%E5%9C%A8ios%E4%B8%8A%E4%B8%8D%E7%94%9F%E6%95%88%E7%9A%84%E5%9D%91.md) | [vue.config.js基本配置](https://github.com/wgjh5/vueSummarize/blob/master/vue.config.js%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE.md) |
 | [vue中qrcode的使用方法](./vue中qrcode的使用方法.md)          | [vue路由钩子函数的实战用法](./vue路由钩子函数的实战用法.md)  |
 | [vue中Promise的实战用法](./vue中Promise的实战用法.md)        | [vue父子组件的传值与方法互调](./vue父子组件的传值与方法互调.md) |
-| [vue中sass报错解决办法](./)                                  |                                                              |
+| [vue中sass报错解决办法](./vue中sass报错解决办法.md)          |                                                              |
 
