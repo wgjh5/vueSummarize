@@ -22,7 +22,7 @@
 | [vue中qrcode的使用方法](./vue中qrcode的使用方法.md)          | [vue路由钩子函数的实战用法](./vue路由钩子函数的实战用法.md)  |
 | [vue中Promise的实战用法](./vue中Promise的实战用法.md)        | [vue父子组件的传值与方法互调](./vue父子组件的传值与方法互调.md) |
 | [vue中sass报错解决办法](./vue中sass报错解决办法.md)          | [vue中watch的实战用法](./vue中watch的实战用法.md)            |
-| [报错解决](https://github.com/wgjh5/vueSummarize/blob/master/Error in nextTick TypeError Cannot read property 'children' of undefined 解决.md) | [vue中返回顶部组件的封装](./vue中返回顶部组件的封装.md)      |
+| [报错解决]([https://github.com/wgjh5/vueSummarize/blob/master/Error%20in%20nextTick%20TypeError%20Cannot%20read%20property%20'children'%20of%20undefined%20%E8%A7%A3%E5%86%B3.md](https://github.com/wgjh5/vueSummarize/blob/master/Error in nextTick TypeError Cannot read property 'children' of undefined 解决.md)) | [vue中返回顶部组件的封装](./vue中返回顶部组件的封装.md)      |
 | [解决浏览器记住密码input背景色问题](./解决浏览器记住密码input背景色问题.md) | [css颜色十六进制末尾加两位实现透明度变化](./css颜色十六进制末尾加两位实现透明度变化.md) |
 | [vue3.0vue-router报错解决方案](./vue3.0vue-router报错解决方案.md) | [particles.js在vue中的实战用法](./particles.js在vue中的实战用法.md) |
 | [vue解决打开新窗口被拦截的的实战方法](./vue解决打开新窗口被拦截的的实战方法.md) | [vue添加回车事件](./vue添加回车事件.md)                      |
