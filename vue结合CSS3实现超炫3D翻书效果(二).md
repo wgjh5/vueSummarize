@@ -1,5 +1,6 @@
-<template>
-	<!-- <div class="home"> -->
+> 上回书，我们已经简单实现如何翻一页。好，现在我们复习一下。翻书效果的基本原理，请看下html布局：
+
+```xml
 	<div id="box" @click="turningPage">
 		<div class="page">
 			<div class="front"></div>
@@ -7,9 +8,92 @@
 		</div>
 		<div class="page2"></div>
 	</div>
-	<!-- </div> -->
-</template>
+```
 
+> 简单再次说明下：box为大盒子，主要提供显示区域的左部分；page为要翻转的页面，其包含正面（front）和背面（back）；page2主要提供翻页后显示区域的右部分。
+>  -page定位在页面的右部分，front显示的图片与box的图片组合成一个完整的图。back显示的图片   与page2显示的图片组合成一个完整的图。
+>  -翻页前，展示区左部分为box的图，展示区右部分为front的图。
+>  -翻页后，展示区左部分为back的图，展示区右部分为page2的图。
+>
+> ###### 还有一点说明，就是当我们将page翻页后（沿着Y轴旋转-180°），需要将其拉回(恢复到原来的0°)。并将backd的图与page2的图切换到下一张。
+>
+> ###### 现在我们准备好3张图
+
+
+
+> 第一步就是我们昨天说看到那样的步骤(具体请看：CSS3实现超炫3D翻书效果（一）)，这里就不在重复。
+>  css布局：
+
+
+
+```css
+
+	html,
+	body {
+		overflow: hidden;
+	}
+
+	#box {
+		background: url("../assets/0.png") no-repeat;
+		width: 700px;
+		height: 400px;
+		margin: 100px auto;
+		position: relative;
+	}
+
+	#box .page {
+		width: 50%;
+		height: 100%;
+		top: 0;
+		right: 0;
+		position: absolute;
+		transform-style: preserve-3d;
+		transform-origin: left center;
+		z-index: 2;
+		transform: perspective(800px) rotateY(0deg);
+	}
+
+	.page .front {
+		background: url("../assets/0.png") right top no-repeat;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		position: absolute;
+		backface-visibility: hidden;
+		z-index: 2;
+	}
+
+	.page .back {
+		background: url("../assets/1.png") left top no-repeat;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		transform: scale(-1, 1);
+		z-index: 1;
+	}
+
+	#box .page2 {
+		width: 50%;
+		height: 100%;
+		top: 0;
+		right: 0;
+		position: absolute;
+		background: url("../assets/1.png") right top no-repeat;
+		z-index: 1;
+	}
+```
+
+##### 下面我们主要看下如何拉回与换图的操作
+
+这里我们为防止“麒麟臂”大神，需要做一个开关，当前一个动画结束前再次点击翻页无效。
+ 上js代码：
+
+
+
+```jsx
 <script>
 	// @ is an alias to /src
 	// import HelloWorld from '@/components/HelloWorld.vue'
@@ -82,63 +166,11 @@
 		}
 	}
 </script>
-<style scoped>
+```
+
+效果如下：
 
 
-	html,
-	body {
-		overflow: hidden;
-	}
 
-	#box {
-		background: url("../assets/0.png") no-repeat;
-		width: 700px;
-		height: 400px;
-		margin: 100px auto;
-		position: relative;
-	}
 
-	#box .page {
-		width: 50%;
-		height: 100%;
-		top: 0;
-		right: 0;
-		position: absolute;
-		transform-style: preserve-3d;
-		transform-origin: left center;
-		z-index: 2;
-		transform: perspective(800px) rotateY(0deg);
-	}
 
-	.page .front {
-		background: url("../assets/0.png") right top no-repeat;
-		width: 100%;
-		height: 100%;
-		left: 0;
-		top: 0;
-		position: absolute;
-		backface-visibility: hidden;
-		z-index: 2;
-	}
-
-	.page .back {
-		background: url("../assets/1.png") left top no-repeat;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		left: 0;
-		top: 0;
-		transform: scale(-1, 1);
-		z-index: 1;
-	}
-
-	#box .page2 {
-		width: 50%;
-		height: 100%;
-		top: 0;
-		right: 0;
-		position: absolute;
-		background: url("../assets/1.png") right top no-repeat;
-		z-index: 1;
-	}
-</style>

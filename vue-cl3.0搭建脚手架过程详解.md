@@ -52,11 +52,12 @@ vue create project-name
 
 ![img](https://img2018.cnblogs.com/blog/1020867/201810/1020867-20181018183831537-604246449.png)
 
-my-default 是 我原来保存好的模板；
-
-default 是 使用默认配置
-
-Manually select features 是 自定义配置
+> my-default 是 我原来保存好的模板；
+>
+> default 是 使用默认配置
+>
+> Manually select features 是 自定义配置
+>
 
 ![img](https://img2018.cnblogs.com/blog/1020867/201810/1020867-20181018184341583-2142172777.png)
 
@@ -95,8 +96,6 @@ Manually select features 是 自定义配置
 > ESLint + Standard config
   ESLint + Prettier
 ```
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
 
 7.选择语法检查方式，这里我选择保存就检测
 
@@ -162,6 +161,10 @@ npm run serve // 运行项目
 
 ![img](https://img2018.cnblogs.com/blog/1020867/201810/1020867-20181018204632693-58250183.png)
 
-[参考链接1](https://www.cnblogs.com/qq1272850043/p/9812421.html)
+[参考链接cli3-1](https://www.cnblogs.com/qq1272850043/p/9812421.html)
 
-[参考链接2](https://www.cnblogs.com/qq1272850043/p/9812421.html)
+[参考链接cli3-2](https://www.cnblogs.com/qq1272850043/p/9812421.html)
+
+[参考链接cli4-1](https://www.jianshu.com/p/fc94ad12cb9a)
+
+[参考链接cli4-2](https://www.cnblogs.com/qinyuanchun/p/11821918.html)
