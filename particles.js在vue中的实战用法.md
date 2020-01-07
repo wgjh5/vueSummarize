@@ -1,3 +1,5 @@
+#### [效果预览](https://wgjh5.github.io/vueSummarize/vue%E5%AE%9E%E7%8E%B03D%E7%BF%BB%E4%B9%A6%E6%95%88%E6%9E%9C/turningpage/dist/#/particles)
+
 > 先看一下效果吧，以便有充分的兴趣读下去！
 
 ![](E:\git仓库\Notes\img\particles.png)
@@ -157,7 +159,7 @@ mounted(){
 }
 ````
 
-[效果预览](http://www.jq22.com/yanshi20054)
+[demo源码](https://github.com/wgjh5/vueSummarize/blob/master/vue%E5%AE%9E%E7%8E%B03D%E7%BF%BB%E4%B9%A6%E6%95%88%E6%9E%9C/turningpage/src/views/Particles.vue)
 
 [参考链接1](https://www.jianshu.com/p/c52b3e91c94f)
 
