@@ -1,3 +1,5 @@
+#### [效果预览](https://wgjh5.github.io/vueSummarize/vue%E5%AE%9E%E7%8E%B03D%E7%BF%BB%E4%B9%A6%E6%95%88%E6%9E%9C/turningpage/dist/#/about)
+
 > 上回书，我们已经简单实现如何翻一页。好，现在我们复习一下。翻书效果的基本原理，请看下html布局：
 
 ```xml

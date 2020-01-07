@@ -6,8 +6,12 @@
 
 <script>
 	export default {
+		data() {
+			return {
+			}
+		},
 		    mounted() {
-		        particlesJS.load('particles', '/particles.json', function () {
+		        particlesJS.load('particles',"../../particles.json", function () {
 		            console.log('callback - particles.js config loaded');
 		        });
 		       
